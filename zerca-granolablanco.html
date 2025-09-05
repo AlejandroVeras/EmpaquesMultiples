@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>Zerca Granola – Mezcla de Avena Integral, Frutas y Semillas (15 porciones)</title>
+   <meta name="description" content="Zerca Granola: mezcla de avena integral, pasas, maní, semillas de girasol y ajonjolí. Por porción (29 g): 130 kcal, 3 g grasa, 23 g carbohidratos, 5 g fibra, 7 g azúcares añadidos, 3 g proteína. 15 porciones.">
+   <meta name="keywords" content="Zerca Granola, granola dominicana, avena integral, semillas de girasol, ajonjolí, pasas, maní, 5 g fibra, desayuno saludable">
+   <link rel="icon" href="images/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+      :root{
+         --brand-green:#116835;
+         --soft-bg:#f8f9fa;
+         --chip-bg:#eef5ff;
+         --chip-border:#d3e3f7;
+         --warn-bg:#fff3e0;
+         --warn-border:#f5d4a3;
+         --accent:#b86416;
+      }
+      .gallery_img-producto{width:360px;height:360px;margin:0 auto 24px;display:flex;justify-content:center;align-items:center;background:#fff;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.07)}
+      .gallery_img-producto figure{width:100%;height:100%;margin:0;display:flex;align-items:center;justify-content:center}
+      .gallery_img-producto img{max-width:100%;max-height:100%;object-fit:contain}
+      .product-highlight{font-size:2.05em;color:var(--brand-green);font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:center;margin:10px 0 18px;line-height:1.1;border-bottom:2.5px solid var(--brand-green);display:inline-block;padding-bottom:8px;text-shadow:0 2px 6px rgba(0,0,0,.08)}
+      .lead-desc{font-size:.95rem;line-height:1.55}
+      .section-subtitle{font-weight:700;color:#252525;margin:30px 0 14px}
+      .claims-grid{display:flex;flex-wrap:wrap;gap:16px;margin:22px 0 10px}
+      .claim{flex:1 1 160px;min-width:148px;background:#fff;border:1px solid #e3e8e4;border-radius:15px;padding:16px 14px 18px;text-align:center;position:relative;overflow:hidden;box-shadow:0 3px 8px -4px rgba(0,0,0,.06)}
+      .claim:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(17,104,53,.14),transparent 70%);opacity:.9;pointer-events:none}
+      .claim h5{font-size:.9rem;font-weight:700;margin:0 0 4px;color:var(--brand-green)}
+      .claim p{font-size:.6rem;line-height:1.1;margin:0;color:#333;letter-spacing:.35px}
+      .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 24px}
+      .tag-badge{background:var(--chip-bg);color:#16436e;border:1px solid var(--chip-border);font-weight:600;border-radius:22px;padding:6px 12px;font-size:.55rem;letter-spacing:.45px;line-height:1;display:inline-flex;align-items:center;gap:6px;box-shadow:0 1px 2px rgba(0,0,0,.05);white-space:nowrap}
+      .info-box{background:var(--soft-bg);border:1px solid #dae3dd;border-radius:16px;padding:22px 24px;margin-bottom:28px}
+      .ingredients-list li,.usage-list li{margin-bottom:4px;font-size:.82rem}
+      table.table-sm td,table.table-sm th{padding:.5rem .55rem;font-size:.73rem;vertical-align:middle}
+      .table-striped tbody tr:nth-of-type(odd){background:#f9fbfc}
+      .nutri-foot{font-size:.55rem;color:#555;line-height:1.25;margin-top:4px}
+      .allergen{background:#ffe9e9;border:1px solid #f5c2c2;color:#8b3030;padding:12px 14px;border-radius:10px;font-size:.7rem;margin-top:18px}
+      .admon{background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:10px;padding:12px 14px;font-size:.66rem;line-height:1.25;margin-top:18px}
+      .anchor-back{display:inline-block;margin-top:26px}
+      @media (max-width:575.98px){
+         .claim{flex:1 1 100%}
+         .tag-badge{font-size:.5rem}
+      }
+   </style>
+</head>
+<body class="main-layout in_page">
+
+   <div class="loader_bg"><div class="loader"><img src="images/loading.gif" alt="Cargando"></div></div>
+
+   <!-- Top Contact Bar -->
+   <div class="top-contact-bar">
+      <div class="container">
+         <div class="top-contact-content">
+            <div class="contact-info">
+               <a href="tel:+18095945880" class="contact-item"><i class="fas fa-phone"></i><span>809 594 5880</span></a>
+               <a href="mailto:contacto@casaempaques.com" class="contact-item"><i class="fas fa-envelope"></i><span>contacto@casaempaques.com</span></a>
+            </div>
+            <div class="social-links">
+               <a href="https://instagram.com/empaquesmultiplesrd" target="_blank" title="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+               <a href="https://wa.me/18292926176" target="_blank" title="WhatsApp" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-3 col-sm-3 logo_section">
+                  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo Empaques Múltiples"></a></div>
+               </div>
+               <div class="col-md-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark d-flex align-items-center">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"><span class="navbar-toggler-icon"></span></button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav ml-auto main-menu">
+                           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                           <li class="nav-item dropdown megamenu">
+                              <a class="nav-link dropdown-toggle" href="about.html" data-toggle="dropdown">Nosotros</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="about.html">Sobre Nosotros</a>
+                                 <a class="dropdown-item" href="politicas-seguridad-alimentaria.html">Políticas de Seguridad Alimentaria</a>
+                              </div>
+                           </li>
+                           <li class="nav-item"><a class="nav-link" href="gallery.html">Noticias</a></li>
+                           <li class="nav-item dropdown megamenu">
+                              <a class="nav-link dropdown-toggle" href="productos.html" data-toggle="dropdown">Productos</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="productos.html">Nuestros Productos</a>
+                                 <a class="dropdown-item" href="productos-terceros.html">Marcas Privadas</a>
+                              </div>
+                           </li>
+                           <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                           <li class="nav-item"><a class="nav-link" href="empleo.html">Empleos</a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Content -->
+   <main class="latest_news section-product">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10 col-md-11 col-sm-12">
+               <article class="news_box p-4 p-lg-5">
+
+                  <div class="gallery_img-producto">
+                     <figure>
+                        <img src="images/zerca-granola.png"
+                             alt="Bolsa Zerca Granola – mezcla de avena integral, frutas y semillas">
+                     </figure>
+                  </div>
+
+                  <div class="news_room">
+                     <h1 class="product-highlight">Zerca Granola</h1>
+
+                     <p class="lead-desc">
+                        <strong>Zerca Granola</strong> es una mezcla balanceada de avena integral, pasas, maní, pasta de
+                        frutas, semillas de girasol, ajonjolí y un toque de azúcar crema y sal que aportan textura
+                        crujiente natural, sabor equilibrado y energía sostenida. Cada porción de <strong>29 g</strong>
+                        contiene <strong>130 kcal</strong>, <strong>5 g de fibra dietaria</strong>, <strong>3 g de proteína</strong> y
+                        <strong>7 g de azúcares añadidos</strong>. El envase ofrece <strong>15 porciones</strong> (≈435 g netos) – ajustar si la
+                        etiqueta oficial declara un peso neto distinto.
+                     </p>
+
+                     <!-- Claims -->
+                     <div class="claims-grid">
+                        <div class="claim"><h5>Fibra</h5><p>5 g / porción</p></div>
+                        <div class="claim"><h5>Semillas</h5><p>Girasol & Ajonjolí</p></div>
+                        <div class="claim"><h5>Frutas</h5><p>Pasas + Pasta</p></div>
+                        <div class="claim"><h5>Listo</h5><p>Desayuno rápido</p></div>
+                     </div>
+
+                     <div class="tag-list">
+                        <span class="tag-badge"><i class="fa fa-circle"></i> 15 porciones</span>
+                        <span class="tag-badge"><i class="fa fa-circle"></i> 5 g fibra</span>
+                        <span class="tag-badge"><i class="fa fa-circle"></i> Semillas & frutos</span>
+                     </div>
+
+                     <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                           <h3 class="section-subtitle">Ingredientes</h3>
+                           <ul class="ingredients-list">
+                              <li>Avena integral.</li>
+                              <li>Azúcar crema.</li>
+                              <li>Pasas.</li>
+                              <li>Maní.</li>
+                              <li>Pasta de frutas.</li>
+                              <li>Semillas de girasol.</li>
+                              <li>Ajonjolí (sésamo).</li>
+                              <li>Sal.</li>
+                           </ul>
+
+                           <div class="info-box">
+                              <h3 class="section-subtitle" style="margin-top:0;">Modo de Consumo Sugerido</h3>
+                              <ol class="ingredients-list" style="list-style:decimal;padding-left:18px">
+                                 <li>Servir 1 porción (29 g ≈ 1/3 taza) en un bowl.</li>
+                                 <li>Agregar 120–150 ml de yogurt, leche o bebida vegetal.</li>
+                                 <li>Incorporar fruta fresca (banano, berries, piña) para micronutrientes adicionales.</li>
+                                 <li>Opcional: añadir semillas extra o un toque de miel si se desea mayor dulzor.</li>
+                              </ol>
+                              <h4 class="section-subtitle" style="margin:18px 0 8px;font-size:1rem;">Uso en Repostería</h4>
+                              <p style="font-size:.8rem">
+                                 Sustituya 15–20% de la harina de muffins o barras por granola triturada para textura crujiente y fibra.
+                              </p>
+                              <div class="tag-list">
+                                 <span class="tag-badge"><i class="fa fa-circle"></i> 29 g ≈ 1/3 taza</span>
+                                 <span class="tag-badge"><i class="fa fa-circle"></i> Lista para comer</span>
+                              </div>
+                           </div>
+
+                           <h3 class="section-subtitle">Beneficios Destacados</h3>
+                           <ul class="usage-list">
+                              <li>Fibra dietaria (5 g) que apoya tránsito intestinal.</li>
+                              <li>Mezcla de grasas insaturadas de semillas y maní para energía sostenida.</li>
+                              <li>Textura crujiente que mejora la saciedad sensorial.</li>
+                              <li>Versátil: desayuno, topping o snack.</li>
+                           </ul>
+
+                           <h3 class="section-subtitle">Conservación</h3>
+                           <p style="font-size:.82rem">
+                              Mantener cerrado en lugar fresco, seco y alejado de olores fuertes. Una vez abierto, consumir preferentemente en 30–45 días para preservar crocancia. Puede trasvasarse a frasco hermético.
+                           </p>
+
+                           <h3 class="section-subtitle">Usos Creativos</h3>
+                           <ul class="usage-list">
+                              <li>Topping para smoothie bowls y helados.</li>
+                              <li>Capa crujiente en parfaits de yogurt.</li>
+                              <li>Cobertura para frutas horneadas (manzana, pera).</li>
+                              <li>Base rápida para barras energéticas (agregar mantequilla de maní y miel).</li>
+                           </ul>
+
+                           <div class="allergen">
+                              Contiene gluten (avena) y maní. Contiene ajonjolí (sésamo). Puede contener trazas de otros frutos secos si se procesan en la misma línea.
+                           </div>
+
+                           <div class="admon">
+                              Los beneficios mencionados dependen de un patrón de alimentación equilibrado y actividad física. Ajustar la porción según necesidades calóricas individuales.
+                           </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                           <h3 class="section-subtitle">Datos Nutricionales (por porción 29 g)</h3>
+                           <div class="table-responsive">
+                              <table class="table table-striped table-bordered table-sm mb-2">
+                                 <thead class="thead-light">
+                                    <tr><th>Nutriente</th><th>Cantidad</th><th>%VD*</th></tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr><td>Porciones por envase</td><td>15</td><td>—</td></tr>
+                                    <tr><td>Calorías</td><td>130 kcal</td><td>—</td></tr>
+                                    <tr><td>Grasa Total</td><td>3 g</td><td>4%</td></tr>
+                                    <tr><td>Grasa Saturada</td><td>0.5 g</td><td>4%</td></tr>
+                                    <tr><td>Grasas Trans</td><td>0 g</td><td>0%</td></tr>
+                                    <tr><td>Colesterol</td><td>0 mg</td><td>0%</td></tr>
+                                    <tr><td>Sodio</td><td>20 mg</td><td>0%</td></tr>
+                                    <tr><td>Carbohidratos Totales</td><td>23 g</td><td>7%</td></tr>
+                                    <tr><td>Fibra Dietaria</td><td>5 g</td><td>14%</td></tr>
+                                    <tr><td>Azúcar Añadida</td><td>7 g</td><td>14%</td></tr>
+                                    <tr><td>Proteínas</td><td>3 g</td><td>6%</td></tr>
+                                    <tr><td>Hierro</td><td>—</td><td>6%</td></tr>
+                                    <tr><td>Fósforo</td><td>—</td><td>10%</td></tr>
+                                    <tr><td>Vitamina A</td><td>—</td><td>0%</td></tr>
+                                    <tr><td>Vitamina C</td><td>—</td><td>0%</td></tr>
+                                    <tr><td>Calcio</td><td>—</td><td>0%</td></tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <h3 class="section-subtitle">Beneficios Clave</h3>
+                           <ul class="usage-list">
+                              <li>5 g de fibra contribuyen a la saciedad y salud digestiva.</li>
+                              <li>Combinación de carbohidratos y grasas insaturadas para energía gradual.</li>
+                              <li>Incluye frutos secos y semillas que aportan textura y micronutrientes.</li>
+                              <li>Perfil de azúcares añadidos moderado para una granola dulce balanceada.</li>
+                           </ul>
+
+                           <h3 class="section-subtitle">Consejos de Optimización</h3>
+                           <ul class="usage-list">
+                              <li>Añadir fuente de proteína (yogurt griego, leche alta en proteína) para balancear macronutrientes.</li>
+                              <li>Combinar con fruta fresca rica en vitamina C para mayor aporte antioxidante.</li>
+                              <li>Agregar justo antes de consumir para preservar crocancia.</li>
+                              <li>Hornear 5 min a 150–160°C para reactivar crocancia si absorbe humedad.</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+
+                  <a class="read_more anchor-back" href="productos-terceros.html">← Volver a Productos</a>
+               </article>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container animate-on-scroll">
+            <div class="row">
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <p class="text-white fs-5"><i class="fas fa-envelope me-2"></i> contacto@casaempaques.com</p>
+                    <p class="text-white fs-5"><i class="fas fa-phone me-2"></i>(809) 594-5880</p>
+                    <p class="text-white fs-5"><i class="fas fa-map-marker-alt me-2"></i> Calle 19 No. 24. Sector Alma Rosa II Santo Domingo Este, Rep. Dominicana</p>
+                    <div class="d-flex mt-3 gap-3">
+                      <p><a href="https://www.instagram.com/empaquesmultiplesrd/" class="text-white fs-5"><i class="fab fa-instagram"></i> @empaquesmultiplesrd</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Noticias</a></li>
+                        <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li><a href="empleo.html" class="text-white text-decoration-none">Empleos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">¿En qué podemos ayudarte?</h5>
+                    <p class="text-white fs-5">Ofrecemos servicio de empaques a clientes institucionales y grandes cadenas de supermercados para sus marcas privadas, apegados a altos estándares internacionales.</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <figure><img src="images/logo.png" alt="#" /></figure>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center border-top border-secondary pt-3 mt-4 small text-muted">
+                © 2025 Empaques Múltiples SRL. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>

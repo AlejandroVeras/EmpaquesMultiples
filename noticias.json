@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Rehidratación Post-Ejercicio: El Papel de la Leche",
+    "fecha": "2025-05-20",
+    "imagen": "images/lecherehidratacionpostejercicio.jpg",
+    "resumen": "La leche, por su contenido de agua y electrolitos, es excelente para la recuperación tras el ejercicio. Sus nutrientes ayudan a la absorción óptima y prevención de lesiones.",
+    "link": "noticia-rehidratacion-postejercicio.html"
+  },
+  {
+    "titulo": "Lácteos: Fuente Vital de Salud y Prevención",
+    "fecha": "2024-04-05",
+    "imagen": "images/lacteos.png",
+    "resumen": "Los productos lácteos aportan proteínas, calcio y vitaminas esenciales, ayudando a prevenir enfermedades óseas y cardiovasculares.",
+    "link": "noticia-lacteos-fuentes-vital.html"
+  },
+  {
+    "titulo": "Nuestro Gerente General Representa al País en Asamblea de FEPALE",
+    "fecha": "2023-12-01",
+    "imagen": "images/Noticia1.jpg",
+    "resumen": "En la 31 Asamblea Anual de FEPALE, nuestro gerente general participó activamente representando a la empresa y al país.",
+    "link": "noticia-fepale.html"
+  },
+  {
+    "titulo": "¡Estamos Certificados! Somos Operador Económico Autorizado",
+    "fecha": "2022-03-02",
+    "imagen": "images/Noticia2.jpg",
+    "resumen": "Recibimos la certificación como Operador Económico Autorizado, siendo reconocidos como importador confiable en República Dominicana.",
+    "link": "noticia-oea.html"
+  },
+  {
+    "titulo": "Los Lácteos: Esenciales para tu Salud Diaria",
+    "fecha": "2022-02-15",
+    "imagen": "images/LACTEOS.jpeg",
+    "resumen": "Los lácteos son fundamentales en la alimentación diaria por sus proteínas, calcio y vitaminas esenciales para niños y adultos.",
+    "link": "noticia-lacteos1.html"
+  },
+  {
+    "titulo": "Nuestro Gerente General Impulsa la Transformación Láctea en el Consejo de Conaleche",
+    "fecha": "2020-10-08",
+    "imagen": "images/noticiaconaleche.png",
+    "resumen": "Nuestro gerente general participa en reunión del Consejo Directivo del Conaleche.",
+    "link": "noticia-conaleche.html"
+  }
+]

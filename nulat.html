@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+   <title>Nulat Adulto Mayor – Suplemento Alimenticio en Polvo (Lácteo Fortificado)</title>
+   <meta name="description" content="Nulat Adulto Mayor: suplemento alimenticio en polvo con proteínas 100% de leche, vitaminas A, B2, B12, C y minerales (calcio, hierro, zinc, yodo, folatos). Por 100 g: 412 kcal, carbohidratos 56.5 g, proteínas 15 g, grasa 15 g, fibra 3 g, calcio 720 mg. Porción sugerida 50 g.">
+   <meta name="keywords" content="Nulat Adulto Mayor, suplemento lácteo, adulto mayor, proteínas de leche, calcio, vitaminas, hierro, folatos, zinc, yodo, nutrición, fortificado">
+   <link rel="icon" href="images/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+      :root{
+         --brand-green:#116835;
+         --soft-bg:#f7faf9;
+         --chip-bg:#eef5ff;
+         --chip-border:#d3e3f7;
+         --warn-bg:#fff3e0;
+         --warn-border:#f5d4a3;
+      }
+      .gallery_img-producto{width:360px;height:360px;margin:0 auto 24px;display:flex;justify-content:center;align-items:center;background:#fff;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.07)}
+      .gallery_img-producto figure{width:100%;height:100%;margin:0;display:flex;align-items:center;justify-content:center}
+      .gallery_img-producto img{max-width:100%;max-height:100%;object-fit:contain}
+      .product-highlight{font-size:2.05em;color:var(--brand-green);font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:center;margin:10px 0 10px;line-height:1.1;border-bottom:2.5px solid var(--brand-green);display:inline-block;padding-bottom:8px;text-shadow:0 2px 6px rgba(0,0,0,.08)}
+      .subtitle-ribbon{display:inline-block;background:#fff;border:1px solid #c8e2d3;color:#116835;font-weight:700;font-size:.65rem;padding:4px 10px;border-radius:20px;letter-spacing:.8px;margin:4px 0 18px;text-transform:uppercase}
+      .lead-desc{font-size:.95rem;line-height:1.48}
+      .section-subtitle{font-weight:700;color:#252525;margin:30px 0 14px}
+      .claims-grid{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0 6px}
+      .claim{flex:1 1 160px;min-width:150px;background:#fff;border:1px solid #e1e7e4;border-radius:14px;padding:15px 14px 18px;text-align:center;position:relative;overflow:hidden;box-shadow:0 3px 8px -4px rgba(0,0,0,.06)}
+      .claim:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 28% 30%,rgba(17,104,53,.14),transparent 70%);opacity:.9;pointer-events:none}
+      .claim h5{font-size:.92rem;font-weight:700;margin:0 0 4px;color:var(--brand-green)}
+      .claim p{font-size:.6rem;line-height:1.15;margin:0;color:#333;letter-spacing:.4px}
+      .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+      .tag-badge{background:var(--chip-bg);color:#16436e;border:1px solid var(--chip-border);font-weight:600;border-radius:22px;padding:6px 12px;font-size:.55rem;letter-spacing:.5px;line-height:1;display:inline-flex;align-items:center;gap:6px;box-shadow:0 1px 2px rgba(0,0,0,.05);white-space:nowrap}
+      .info-box{background:var(--soft-bg);border:1px solid #d9e5df;border-radius:14px;padding:20px 22px;margin-bottom:28px}
+      .ingredients-list li,.usage-list li{margin-bottom:4px;font-size:.82rem}
+      table.table-sm td,table.table-sm th{padding:.48rem .6rem;font-size:.74rem;vertical-align:middle}
+      .table-striped tbody tr:nth-of-type(odd){background-color:#f9fbfc}
+      .nutri-foot{font-size:.58rem;color:#555;line-height:1.25;margin-top:4px}
+      .admon{background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:10px;padding:12px 14px;font-size:.68rem;line-height:1.25;margin-top:18px}
+      .allergen{background:#ffe9e9;border:1px solid #f5c2c2;color:#8b3030;padding:10px 14px;border-radius:8px;font-size:.7rem;margin-top:18px}
+      .anchor-back{display:inline-block;margin-top:26px}
+      .mini-panels{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 8px}
+      .mini-panel{flex:1 1 110px;min-width:108px;background:#fff;border:1px solid #e0e7e2;border-radius:10px;padding:10px 10px 12px;text-align:center;box-shadow:0 2px 5px -2px rgba(0,0,0,.06)}
+      .mini-panel h6{margin:0 0 2px;font-size:.62rem;letter-spacing:.5px;color:#116835;font-weight:700;text-transform:uppercase}
+      .mini-panel span{display:block;font-size:.68rem;font-weight:600;color:#2d2d2d}
+      .note{font-size:.6rem;color:#6a6a6a;margin-top:2px}
+      .disclaimer{font-size:.6rem;color:#5a184f;font-weight:600;margin-top:10px;text-transform:uppercase}
+      @media (max-width:575.98px){
+         .claim{flex:1 1 100%}
+         .claim h5{font-size:.9rem}
+         .claim p{font-size:.58rem}
+         .tag-badge{font-size:.52rem}
+      }
+   </style>
+</head>
+<body class="main-layout in_page">
+
+   <div class="loader_bg"><div class="loader"><img src="images/loading.gif" alt="Cargando"></div></div>
+
+   <!-- Top Contact Bar -->
+   <div class="top-contact-bar">
+      <div class="container">
+         <div class="top-contact-content">
+            <div class="contact-info">
+               <a href="tel:+18095945880" class="contact-item"><i class="fas fa-phone"></i><span>809 594 5880</span></a>
+               <a href="mailto:contacto@casaempaques.com" class="contact-item"><i class="fas fa-envelope"></i><span>contacto@casaempaques.com</span></a>
+            </div>
+            <div class="social-links">
+               <a href="https://instagram.com/empaquesmultiplesrd" target="_blank" title="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+               <a href="https://wa.me/18292926176" target="_blank" title="WhatsApp" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-3 col-sm-3 logo_section">
+                  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo Empaques Múltiples"></a></div>
+               </div>
+               <div class="col-md-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark d-flex align-items-center">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"><span class="navbar-toggler-icon"></span></button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav ml-auto main-menu">
+                           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                           <li class="nav-item dropdown megamenu">
+                              <a class="nav-link dropdown-toggle" href="about.html" data-toggle="dropdown">Nosotros</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="about.html">Sobre Nosotros</a>
+                                 <a class="dropdown-item" href="politicas-seguridad-alimentaria.html">Políticas de Seguridad Alimentaria</a>
+                              </div>
+                           </li>
+                           <li class="nav-item"><a class="nav-link" href="gallery.html">Noticias</a></li>
+                           <li class="nav-item dropdown megamenu">
+                              <a class="nav-link dropdown-toggle" href="productos.html" data-toggle="dropdown">Productos</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="productos.html">Nuestros Productos</a>
+                                 <a class="dropdown-item" href="productos-terceros.html">Marcas Privadas</a>
+                              </div>
+                           </li>
+                           <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                           <li class="nav-item"><a class="nav-link" href="empleo.html">Empleos</a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Content -->
+   <main class="latest_news">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-11">
+               <article class="news_box p-4">
+                  <div class="gallery_img-producto">
+                     <figure>
+                        <img src="images/nulat.jpg" alt="Envase Nulat Adulto Mayor suplemento alimenticio en polvo (sabor lácteo natural)">
+                     </figure>
+                  </div>
+
+                  <div class="news_room">
+                     <h1 class="product-highlight">Nulat</h1>
+
+                     <p class="lead-desc">
+                        <strong>Nulat Adulto Mayor</strong> es un suplemento alimenticio en polvo con proteínas 100% de
+                        leche y una proporción equilibrada de carbohidratos, grasas, vitaminas y minerales clave para
+                        apoyar la nutrición diaria de personas mayores. Aporta calcio, hierro, zinc, yodo, folatos y
+                        vitaminas antioxidantes y del complejo B. Se disuelve rápidamente, ofrece textura cremosa y sabor lácteo natural.
+                     </p>
+
+                     <!-- Claims -->
+                     <div class="claims-grid">
+                        <div class="claim"><h5>Proteína Láctea</h5><p>100% leche</p></div>
+                        <div class="claim"><h5>Calcio Alto</h5><p>720 mg /100 g</p></div>
+                        <div class="claim"><h5>Vitaminas</h5><p>A • B2 • B12 • C</p></div>
+                        <div class="claim"><h5>Minerales</h5><p>Fe • Zn • Yodo</p></div>
+                     </div>
+
+                     <div class="tag-list">
+                        <span class="tag-badge"><i class="fa fa-circle"></i> Sabor lácteo natural</span>
+                        <span class="tag-badge"><i class="fa fa-circle"></i> Textura cremosa</span>
+                        <span class="tag-badge"><i class="fa fa-circle"></i> Fácil disolución</span>
+                     </div>
+
+                     <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                           <h3 class="section-subtitle">Ingredientes</h3>
+                           <ul class="ingredients-list">
+                              <li>Leche entera en polvo.</li>
+                              <li>Maltodextrina.</li>
+                              <li>Sólidos lácteos (suero en polvo, concentrado de proteína de leche, sólidos no grasos).</li>
+                              <li>Avena pulverizada.</li>
+                              <li>Goma Xanthan.</li>
+                              <li>Sabor natural de leche.</li>
+                              <li>Compuesto de vitaminas A, B2, B12 y C.</li>
+                           </ul>
+
+                           <div class="info-box">
+                              <h3 class="section-subtitle" style="margin-top:0;">Modo de Preparar Bebida</h3>
+                              <div class="prep-illu">
+                                 <div class="step-icon">1</div>
+                                 <div><strong>Colocar:</strong> Colocar 200 ml de agua potable en un vaso.</div>
+                              </div>
+                              <div class="prep-illu">
+                                 <div class="step-icon">2</div>
+                                 <div><strong>Añadir:</strong> Añadir 1 porción (≈50 g) de Nulat Adulto Mayor.</div>
+                              </div>
+                              <div class="prep-illu">
+                                 <div class="step-icon">3</div>
+                                 <div><strong>Mezclar:</strong> Mezclar vigorosamente hasta disolver (≈1 minuto).</div>
+                              </div>
+                              <div class="prep-illu">
+                                 <div class="step-icon">4</div>
+                                 <div><strong>Consumir:</strong> Consumir inmediatamente o refrigerar ≤24 h (agitar antes de servir).</div>
+                              </div>
+                              <div class="tag-list">
+                                 <span class="tag-badge"><i class="fa fa-circle"></i> Porción sugerida 50 g</span>
+                                 <span class="tag-badge"><i class="fa fa-circle"></i> Preparación rápida</span>
+                              </div>
+                           </div>
+
+                           <h3 class="section-subtitle">Recomendación Diaria</h3>
+                           <p style="font-size:.83rem">Ingerir 1 porción de 50 g (o según recomendación profesional) como parte de una dieta equilibrada.</p>
+
+                           <h3 class="section-subtitle">Conservación</h3>
+                           <p style="font-size:.82rem">
+                              Almacenar en lugar fresco, seco, limpio y ventilado. Proteger de humedad, calor y olores fuertes.
+                              Cerrar bien el envase tras cada uso. Una vez abierto utilizar dentro de 90 días. Producto preparado:
+                              refrigerar (≤4 °C) y consumir dentro de 24 h.
+                           </p>
+
+                           <h3 class="section-subtitle">Características </h3>
+                           <p style="font-size:.82rem">Polvo sin aglomeraciones ni grumos. Color blanco cremoso. Olor y sabor propios de la leche natural.</p>
+
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                           <h3 class="section-subtitle">Datos de Nutrición (por 100 g de polvo)</h3>
+                           <!-- Tabla estandarizada como en los otros productos (2 columnas) -->
+                           <div class="table-responsive">
+                              <table class="table table-striped table-bordered table-sm mb-2">
+                                 <thead class="thead-light">
+                                    <tr>
+                                       <th>Nutriente</th>
+                                       <th>Cantidad</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr><td>Energía</td><td>412 kcal</td></tr>
+                                    <tr><td>Grasa</td><td>15 g</td></tr>
+                                    <tr><td>Proteínas</td><td>15 g</td></tr>
+                                    <tr><td>Carbohidratos</td><td>56.5 g</td></tr>
+                                    <tr><td>Fibra</td><td>3 g</td></tr>
+                                    <tr><td>Vitamina A</td><td>390 mcg</td></tr>
+                                    <tr><td>Vitamina B2</td><td>0.58 mg</td></tr>
+                                    <tr><td>Vitamina B12</td><td>1.18 mcg</td></tr>
+                                    <tr><td>Vitamina C</td><td>31 mg</td></tr>
+                                    <tr><td>Folatos</td><td>192 mcg</td></tr>
+                                    <tr><td>Hierro</td><td>20 mg</td></tr>
+                                    <tr><td>Calcio</td><td>720 mg</td></tr>
+                                    <tr><td>Zinc</td><td>9.25 mg</td></tr>
+                                    <tr><td>Yodo</td><td>95 mcg</td></tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <h3 class="section-subtitle">Beneficios Clave</h3>
+                           <ul class="usage-list">
+                              <li>Proteína láctea completa para mantenimiento de masa muscular.</li>
+                              <li>Alto aporte de calcio y otros minerales (hierro, zinc, yodo) esenciales.</li>
+                              <li>Vitaminas A, B2, B12 y C + folatos para soporte inmunológico y metabólico.</li>
+                              <li>Fácil disolución y sabor neutro que permite múltiples preparaciones.</li>
+                           </ul>
+
+                           <h3 class="section-subtitle">Sugerencias de Uso</h3>
+                           <ul class="usage-list">
+                              <li>Consumir con agua o combinar con licuados de fruta suave.</li>
+                              <li>Agregar a purés, cremas o avenas para mayor densidad nutricional.</li>
+                              <li>Dividir la porción en 2 tomas si se prefiere un volumen menor por ingesta.</li>
+                           </ul>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <a class="read_more anchor-back" href="productos.html">← Volver a Productos</a>
+               </article>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container animate-on-scroll">
+            <div class="row">
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <p class="text-white fs-5"><i class="fas fa-envelope me-2"></i> contacto@casaempaques.com</p>
+                    <p class="text-white fs-5"><i class="fas fa-phone me-2"></i>(809) 594-5880</p>
+                    <p class="text-white fs-5"><i class="fas fa-map-marker-alt me-2"></i> Calle 19 No. 24. Sector Alma Rosa II Santo Domingo Este, Rep. Dominicana</p>
+                    <div class="d-flex mt-3 gap-3">
+                      <p><a href="https://www.instagram.com/empaquesmultiplesrd/" class="text-white fs-5"><i class="fab fa-instagram"></i> @empaquesmultiplesrd</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Noticias</a></li>
+                        <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li><a href="empleo.html" class="text-white text-decoration-none">Empleos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">¿En qué podemos ayudarte?</h5>
+                    <p class="text-white fs-5">Ofrecemos servicio de empaques a clientes institucionales y grandes cadenas de supermercados para sus marcas privadas, apegados a altos estándares internacionales.</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <figure><img src="images/logo.png" alt="#" /></figure>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center border-top border-secondary pt-3 mt-4 small text-muted">
+                © 2025 Empaques Múltiples SRL. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
